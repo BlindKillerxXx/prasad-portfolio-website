@@ -29,6 +29,7 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "D:/Prasad/3d_Portfolio/src/assets/profilePic.png";
+import resume from 'D:/Prasad/3d_Portfolio/src/assets/tech/RM_Resume.pdf'
 
 export {
   logo,
@@ -59,4 +60,5 @@ export {
   carrent,
   jobit,
   tripguide,
+  resume,
 };
