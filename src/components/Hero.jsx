@@ -1,17 +1,21 @@
 import { motion } from 'framer-motion'
-import 'D:/Prasad/3d_Portfolio/src/App.css'
+// import 'D:/Prasad/3d_Portfolio/src/App.css'
+import '../../src/App.css'
 import { styles } from '../styles'
 import { ComputersCanvas } from './canvas'
+import CanvasLoader from "./Loader";
 import { profileImage } from "../constants";
 
 
 import DownloadButton from './DownloadButton';
+import { Suspense } from 'react';
 
 const Hero = () => {
   return (
+
     <section className='relative w-full h-screen mx-auto'>
       <div className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 justify-between`}>
-        <div className='flex flex-col justify-center items-center mt-7'>
+        <div className='flex flex-col justify-center items-center mt-7 mr-10'>
           <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
           <div className='w-1 sm:h-80 h-40 violet-gradient' />
         </div>
@@ -22,15 +26,15 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I'm, a passionate web developer and programmer.
 
-            I specialize in HTML, CSS, Javascript, React.js, Node.js, etc. and <br /> I'm always exploring new ways to push the boundaries of what's possible on the web.
-            When I'm not immersed in lines of code, you can find me exploring the latest trends in web development <br /> or tinkering with emerging technologies. Let's build something amazing together!
+            I specialize in HTML, CSS, Javascript, React.js, Node.js, etc.<br /> I'm always exploring new ways to push the boundaries of what's possible on the web.
+            When I'm not immersed in lines of code, you can find me exploring the latest trends in web development or tinkering with emerging technologies. <br /> Let's build something amazing together!
             Excited to be part of the ever-evolving tech landscape!
           </p>
 
           <DownloadButton />
         </div>
 
-        <div className={`profilePos object-cover object-top hidden sm:block`}>
+        <div className={`profilePos object-cover object-top hidden sm:block absolute -z-[1]`}>
           <img className='' src={profileImage.img} alt="" />
 
         </div>
@@ -38,7 +42,7 @@ const Hero = () => {
       {/* <DownloadButton />   */}
       {/* <ComputersCanvas /> */}
 
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
+      <div className='absolute xs:bottom-10 bottom-32 w-full justify-center items-center hidden sm:flex'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
@@ -56,6 +60,7 @@ const Hero = () => {
         </a>
       </div>
     </section>
+
   )
 }
 
