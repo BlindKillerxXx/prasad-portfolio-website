@@ -1,0 +1,109 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.teal-glowing-text {
+  color: #915EFF;
+  text-shadow: 0 0 10px #915EFF, 0 0 10px #915EFF, 0 0 20px #915EFF;
+  /* The values in text-shadow are horizontal offset, vertical offset, blur radius, and color */
+}
+
+@keyframes glowing {
+  0% {
+    text-shadow: 0 0 10px #915EFF;
+  }
+
+  10% {
+    text-shadow: 0 0 12px #915EFF;
+  }
+
+  20% {
+    text-shadow: 0 0 14px #915EFF;
+  }
+
+  30% {
+    text-shadow: 0 0 16px #915EFF;
+  }
+
+  40% {
+    text-shadow: 0 0 18px #915EFF;
+  }
+
+  50% {
+    text-shadow: 0 0 20px #915EFF;
+  }
+
+  60% {
+    text-shadow: 0 0 22px #915EFF;
+  }
+
+  70% {
+    text-shadow: 0 0 24px #915EFF;
+  }
+
+  80% {
+    text-shadow: 0 0 26px #915EFF;
+  }
+
+  90% {
+    text-shadow: 0 0 28px #915EFF;
+  }
+
+  100% {
+    text-shadow: 0 0 30px #915EFF;
+  }
+}
+
+.teal-text {
+  color: #915EFF;
+  animation: glowing 1.5s infinite alternate;
+}
+
+.profilePos {
+  position: 'absolute';
+  right: 0px;
+  top: 12px;
+  border: 1px dashed #915EFF
+}
