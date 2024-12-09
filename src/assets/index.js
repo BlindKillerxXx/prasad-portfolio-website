@@ -31,7 +31,7 @@ import jobit from "./jobit.png";
 // import tripguide from "D:/Prasad/3d_Portfolio/src/assets/profilePic.png";
 import tripguide from '../../src/assets/profilePic.png'
 // import resume from 'D:/Prasad/3d_Portfolio/src/assets/tech/RM_Resume.pdf'
-import resume from '../../src/assets/tech/RM_Resume.pdf'
+import resume from '../../src/assets/tech/Prasad---Bhosle_.pdf'
 
 export {
   logo,

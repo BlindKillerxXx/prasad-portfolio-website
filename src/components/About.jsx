@@ -45,10 +45,7 @@ const About = () => {
       </motion.div>
 
       <motion.p variants={fadeIn("", "", 0.1, 1)} className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-        I'm a skilled software developer with experience in HTML, CSS, Javascript, AEM
-        and in frameworks like React, Node.js. <br />
-        I am excited about leveraging my skills to contribute to innovative projects and am always eager to take on new challenges in the
-        ever-evolving landscape of web development. Let's build something exceptional together!
+      With 3 years of experience in frontend development, successfully designed, developed, and maintained responsive web applications. Led the design of a sophisticated login portal, enhancing security measures while optimizing user experience. Contributed to a comprehensive flight booking project, achieving a seamless user experience and robust functionality. Developed an E-Commerce website with secure payment integration, enhancing user experience during checkout. Proficient in HTML, CSS, JavaScript, jQuery, AEM, React, ensuring adherence to best practices in web development.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

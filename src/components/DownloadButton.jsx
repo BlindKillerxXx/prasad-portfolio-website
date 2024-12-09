@@ -15,7 +15,7 @@ const DownloadButton = () => {
   };
 
   return (
-    <div className='flex sm:mt-20'>
+    <div className='flex sm:mt-10'>
       <a ref={linkRef} style={{ display: 'none' }}></a>
       <button className=' bg-tertiary py-2 px-5 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary hover:bg-white hover:text-black sm:mx-auto' onClick={downloadResume}>Download Resume</button>
       <button className=' bg-tertiary py-2 px-5 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary hover:bg-white hover:text-black sm:mx-auto hidden sm:block'>

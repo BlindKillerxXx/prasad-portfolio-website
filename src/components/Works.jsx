@@ -25,7 +25,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full h-full'
       >
         {/* <div className='relative w-full h-[230px]'>
           <img
@@ -72,7 +72,7 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>My work</p>
+        <p className={`${styles.sectionSubText} `}>My Personal</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
 
@@ -97,4 +97,4 @@ const Works = () => {
   );
 }
 
-export default SectionWrapper(Works, "")
+export default SectionWrapper(Works, "projects")

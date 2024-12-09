@@ -8,13 +8,21 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
 import { Snackbar, Alert } from "@mui/material";
+import { DateRangePicker } from 'react-date-range';
+import { addDays } from 'date-fns';
 
 const Contact = () => {
   const formRef = useRef();
   const [snackbarOpen, setSnackbarOpen] = useState(false);
   const [snackbarSeverity, setSnackbarSeverity] = useState('success');
   const [snackbarMessage, setSnackbarMessage] = useState('');
-
+  const [state, setState] = useState([
+    {
+      startDate: new Date(),
+      endDate: addDays(new Date(), 7),
+      key: 'selection'
+    }
+  ]);
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -105,11 +113,11 @@ const Contact = () => {
 
   return (
     <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
+      className={`xl:mt-12 flex xl:flex-col flex-col gap-10 overflow-hidden`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[0.75] bg-black-100 p-8 rounded-2xl mx-auto'
+        className='flex-[0.75] bg-black-100 p-8 rounded-2xl flex-col sm:w-[70%] sm:mx-auto'
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
@@ -183,19 +191,21 @@ const Contact = () => {
 
       <Link
         to="/"
-        className='flex items-center gap-2'
-        onClick={() => {
-          window.scrollTo(0, 0);
-        }}
+        className='flex items-center gap-2 cursor-auto sm:mx-auto'
+
       >
         <p
-          className={`bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary hover:bg-white hover:text-black `}
-
+          className={`bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary hover:bg-white hover:text-black cursor-pointer`}
+          onClick={() => {
+            window.scrollTo(0, 0);
+          }}
         >
           To Top &nbsp;  &uarr;
         </p>
       </Link>
     </div>
+
+
 
   );
 };

@@ -23,10 +23,10 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className="teal-text">Prasad</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          <p className={`${styles.heroSubText} mt-2 text-white-100 sm:max-w-[70%]`}>
             I'm, a passionate web developer and programmer.
 
-            I specialize in HTML, CSS, Javascript, React.js, Node.js, etc.<br /> I'm always exploring new ways to push the boundaries of what's possible on the web.
+            I specialize in HTML, CSS, Javascript, AEM, React.js, Node.js.<br /> I'm always exploring new ways to push the boundaries of what's possible on the web.
             When I'm not immersed in lines of code, you can find me exploring the latest trends in web development or tinkering with emerging technologies. <br /> Let's build something amazing together!
             Excited to be part of the ever-evolving tech landscape!
           </p>
